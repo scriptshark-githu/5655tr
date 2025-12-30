@@ -1,0 +1,7 @@
+{
+  "abc123": {
+    "steps": ["Fetched HTML", "Checked brand similarity"],
+    "snapshot": "<html>...</html>",
+    "verdict": "This site looks suspicious"
+  }
+}
