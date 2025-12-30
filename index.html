@@ -1,49 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>AI Investigation View</title>
-  <style>
-    body { font-family: Arial; background:#0f1220; color:#eaeaf0; padding:20px }
-    .box { background:#181c3a; padding:15px; margin-bottom:15px; border-radius:8px }
-    h2 { margin-top:0 }
-    pre { white-space:pre-wrap }
-  </style>
+  <meta charset="UTF-8">
+  <title>AI Investigation Dashboard</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <h1>AI Investigation Dashboard</h1>
 
-<h1>AI Investigation View</h1>
+  <div id="content">
+    <p>Loading session...</p>
+  </div>
 
-<div class="box">
-  <h2>Session</h2>
-  <p id="session">Loading…</p>
-</div>
-
-<div class="box">
-  <h2>Steps</h2>
-  <ul id="steps"></ul>
-</div>
-
-<div class="box">
-  <h2>Snapshot</h2>
-  <pre id="snapshot"></pre>
-</div>
-
-<div class="box">
-  <h2>Verdict</h2>
-  <pre id="verdict"></pre>
-</div>
-
-<script>
-  const params = new URLSearchParams(window.location.search);
-  const session = params.get("session");
-  document.getElementById("session").textContent = session || "None";
-
-  // This is a static viewer.
-  // The bot embeds data into the URL-less storage by session ID.
-  // For £0 budget, this page is read-only and informational.
-</script>
-
+  <script src="script.js"></script>
 </body>
 </html>
+
+
 
